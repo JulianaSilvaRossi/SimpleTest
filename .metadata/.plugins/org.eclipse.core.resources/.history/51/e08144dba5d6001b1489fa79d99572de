@@ -1,0 +1,10 @@
+package com.automacao.tests;
+
+public class InicialTest {
+	
+	@Test
+	public void testDeveBuscarProduto_ExibirListaProduto() {
+		
+	}
+
+}

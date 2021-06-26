@@ -1,0 +1,14 @@
+package com.automacao.tests;
+
+import org.openqa.selenium.WebDriver;
+
+import com.automacao.pages.BasePage;
+
+public class InicialPage extends BasePage{
+
+	public InicialPage(WebDriver navegador) {
+		super(navegador);
+		// TODO Auto-generated constructor stub
+	}
+
+}

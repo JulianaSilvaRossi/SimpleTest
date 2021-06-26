@@ -1,0 +1,12 @@
+package com.automacao.tests;
+
+import org.junit.Test;
+
+public class InicialTest extends {
+	
+	@Test
+	public void testDeveBuscarProdutoValido_ExibirListaProduto() {
+		
+	}
+
+}

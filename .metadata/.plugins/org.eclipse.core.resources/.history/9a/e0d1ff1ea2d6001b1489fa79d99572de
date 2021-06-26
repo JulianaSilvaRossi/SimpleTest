@@ -1,0 +1,7 @@
+package com.automacao.tests;
+
+public class BaseTest {
+	
+	public WebDriver navegador;
+
+}

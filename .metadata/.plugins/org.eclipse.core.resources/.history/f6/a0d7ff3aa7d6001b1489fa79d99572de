@@ -1,0 +1,34 @@
+package com.automacao.pages;
+
+import org.junit.Rule;
+import org.junit.rules.TestName;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class AcoesComumPage {
+	
+	public AcoesComumPage(WebDriver navegador) {
+		super();
+		this.navegador = navegador;
+	}
+	
+	@Rule
+	public TestName NomeTeste = new TestName();
+
+	protected WebDriver navegador;
+	
+	public void aguardarElementoAparecer()
+	
+	public void digitarTexto(By elemento, String texto) {
+		navegador.findElement(elemento).sendKeys(texto);
+	}
+	
+	public void clicar(By elemento) {
+		navegador.findElement(elemento).click();
+	}
+	
+	public void limparCampo(By elemento) {
+		navegador.findElement(elemento).clear();
+	}
+	
+}

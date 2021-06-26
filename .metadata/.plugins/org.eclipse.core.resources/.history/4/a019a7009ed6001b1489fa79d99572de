@@ -1,0 +1,14 @@
+package com.automacao.support;
+
+public class Start {
+	
+	private static ThreadLocal<WebDriver> threadDriver = new ThreadLocal<WebDriver>() {
+		@override
+		
+	}
+	
+	public static Webdriver criarMultiplusNavegadores() {
+		
+	}
+
+}

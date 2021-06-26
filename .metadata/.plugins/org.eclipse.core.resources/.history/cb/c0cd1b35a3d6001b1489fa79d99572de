@@ -1,0 +1,5 @@
+package com.automacao.tests;
+
+public class InicialPage extends BasePage{
+
+}

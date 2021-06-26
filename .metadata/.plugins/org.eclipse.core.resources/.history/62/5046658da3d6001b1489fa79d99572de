@@ -1,0 +1,19 @@
+package com.automacao.pages;
+
+import org.junit.Rule;
+import org.junit.rules.TestName;
+import org.openqa.selenium.WebDriver;
+
+public class BasePage {
+	
+	public BasePage(WebDriver navegador) {
+		super();
+		this.navegador = navegador;
+	}
+	
+	@Rule
+	public TestName NomeTeste = new TestName();
+
+	protected WebDriver navegador;
+	
+}

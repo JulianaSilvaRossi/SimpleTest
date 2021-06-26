@@ -1,0 +1,18 @@
+package com.automacao.support;
+
+import org.openqa.selenium.WebDriver;
+
+public class Start {
+	
+	private static ThreadLocal<WebDriver> threadDriver = new ThreadLocal<WebDriver>() {
+		@override
+		protected synchronized WebDriver initialValue() {
+			return abrirChrome
+		}
+	}
+	
+	public static Webdriver criarMultiplusNavegadores() {
+		
+	}
+
+}

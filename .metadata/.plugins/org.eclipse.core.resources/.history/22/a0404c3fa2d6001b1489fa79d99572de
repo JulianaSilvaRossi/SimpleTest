@@ -1,0 +1,12 @@
+package com.automacao.tests;
+
+import org.openqa.selenium.WebDriver;
+
+import com.automacao.pages.BasePage;
+
+public class BaseTest {
+	
+	public WebDriver navegador;
+	BasePage basePage;
+
+}
