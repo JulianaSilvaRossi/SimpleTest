@@ -26,8 +26,8 @@ public class ConfiguracaoPadrao {
 		ChromeOptions opcoesChrome =  new ChromeOptions();
 		opcoesChrome.addArguments("--headless");
 		
-		//WebDriver navegador = new ChromeDriver();
-		WebDriver navegador = new ChromeDriver(opcoesChrome);
+		WebDriver navegador = new ChromeDriver();
+		//WebDriver navegador = new ChromeDriver(opcoesChrome);
 		navegador.manage().window().setSize(new Dimension(1366, 768));
 		navegador.get(url);
 		return navegador;

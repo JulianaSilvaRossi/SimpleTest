@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="InicialTest" project="web" tests="2" started="2" failures="0" errors="0" ignored="0">
+  <testsuite name="com.automacao.tests.InicialTest" time="26.628">
+    <testcase name="testDeveBuscarProdutoValido_ExibirListaProduto2" classname="com.automacao.tests.InicialTest" time="14.542"/>
+    <testcase name="testDeveBuscarProdutoValido_ExibirListaProduto" classname="com.automacao.tests.InicialTest" time="12.086"/>
+  </testsuite>
+</testrun>

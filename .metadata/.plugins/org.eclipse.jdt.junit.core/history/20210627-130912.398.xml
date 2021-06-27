@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="InicialTest" project="web" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="com.automacao.tests.InicialTest" time="49.706">
+    <testcase name="testDeveBuscarProdutoValido_ExibirListaProduto2" classname="com.automacao.tests.InicialTest" time="14.016"/>
+    <testcase name="testDeveBuscarProdutoValido_ExibirListaProduto3" classname="com.automacao.tests.InicialTest" time="12.722"/>
+    <testcase name="testDeveBuscarProdutoValido_ExibirListaProduto4" classname="com.automacao.tests.InicialTest" time="11.688"/>
+    <testcase name="testDeveBuscarProdutoValido_ExibirListaProduto" classname="com.automacao.tests.InicialTest" time="11.28"/>
+  </testsuite>
+</testrun>

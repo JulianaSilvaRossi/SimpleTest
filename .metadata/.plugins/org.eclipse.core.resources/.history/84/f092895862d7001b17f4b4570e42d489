@@ -42,23 +42,5 @@ public class InicialTest extends AcoesComumTest{
 				.capturarResultadoTela();
 		assertEquals("Fraldas", resultadoTela);
 	}
-	
-	@Test
-	public void testDeveBuscarProdutoValido_ExibirListaProduto5() throws InterruptedException {
-		String resultadoTela = inicialPage
-				.buscarProduto("Livros")
-				.clicarBuscarProdutoPage()
-				.capturarResultadoTela();
-		assertEquals("Livros", resultadoTela);
-	}
-	
-	@Test
-	public void testDeveBuscarProdutoValido_ExibirListaProduto6() throws InterruptedException {
-		String resultadoTela = inicialPage
-				.buscarProduto("Camiseta")
-				.clicarBuscarProdutoPage()
-				.capturarResultadoTela();
-		assertEquals("Camiseta", resultadoTela);
-	}
 
 }

@@ -61,7 +61,7 @@
 					<version>2.18.1</version>
 					<configuration>
 						<includes>
-							<include>com/automacao/tests/*.java</include>
+							<include>br/com/automacao/tests/*.java</include>
 						</includes>
 						<parallel>all</parallel>
 						<threadCount>3</threadCount>

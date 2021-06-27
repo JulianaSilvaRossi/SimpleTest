@@ -36,10 +36,9 @@
 	</dependencies>
 
 	<build>
-		<testSourceDirectory>src</testSourceDirectory>
 		<pluginManagement><!-- lock down plugins versions to avoid using Maven 
 				defaults (may be moved to parent pom) -->
-
+			<testSourceDirectory>src</testSourceDirectory>
 			<plugins>
 				<!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
 				<plugin>
@@ -61,7 +60,7 @@
 					<version>2.18.1</version>
 					<configuration>
 						<includes>
-							<include>com/automacao/tests/*.java</include>
+							<include>br/ce/wcaquino/suites/*.java</include>
 						</includes>
 						<parallel>all</parallel>
 						<threadCount>3</threadCount>
