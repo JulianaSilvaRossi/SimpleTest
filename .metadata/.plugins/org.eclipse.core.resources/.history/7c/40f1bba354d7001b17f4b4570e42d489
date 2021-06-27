@@ -1,0 +1,11 @@
+package com.automacao.pages;
+
+import org.openqa.selenium.WebDriver;
+
+public class ResultadoProdutoPage extends AcoesComumPage {
+
+	public ResultadoProdutoPage(WebDriver navegador) {
+		super(navegador);
+	}
+
+}

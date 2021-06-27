@@ -1,0 +1,35 @@
+package com.automacao.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class InicialPage extends AcoesComumPage {
+
+	public InicialPage(WebDriver navegador) {
+		super(navegador);
+	}
+
+	private By txtBuscar = By.xpath("//input[@id=\"inpHeaderSearch\"]");
+	private By btnBuscar = By.xpath("//span[@id='btnHeaderSearch']/i");
+	private By lblProduto = By.xpath("//h1[@itemprop='description']/Strong");
+
+	public InicialPage buscarProduto(String nomeProduto) throws InterruptedException {
+
+		aguardarElementoAparecer(btnBuscar);
+		digitarTexto(txtBuscar, nomeProduto);
+		
+		return this;
+	}
+	
+	public ResultadoProdutoPage produtoPage() {
+		clicarNoElemento(btnBuscar);
+	}
+	
+	public String capturarResultadoTela() {
+		String resultadoTela = capturarTextoTela(lblProduto);
+		return resultadoTela;
+	}
+
+	
+
+}

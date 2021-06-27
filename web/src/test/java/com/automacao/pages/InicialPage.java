@@ -10,16 +10,24 @@ public class InicialPage extends AcoesComumPage {
 	}
 
 	private By txtBuscar = By.xpath("//input[@id=\"inpHeaderSearch\"]");
-	private By btnBuscar = By.xpath("//span[@id=\"btnHeaderSearch\"]");
+	private By btnBuscar = By.xpath("//span[@id='btnHeaderSearch']/i");
+	
 
 	public InicialPage buscarProduto(String nomeProduto) throws InterruptedException {
 
 		aguardarElementoAparecer(btnBuscar);
 		digitarTexto(txtBuscar, nomeProduto);
-		Thread.sleep(500);
-		clicar(btnBuscar);
+		
 		return this;
-
 	}
+	
+	public ResultadoProdutoPage clicarBuscarProdutoPage() {
+		clicarNoElemento(btnBuscar);
+		return new ResultadoProdutoPage(navegador);
+	}
+	
+	
+
+	
 
 }

@@ -7,25 +7,30 @@ import org.openqa.selenium.WebDriver;
 
 import com.automacao.pages.AcoesComumPage;
 import com.automacao.pages.InicialPage;
-import com.automacao.support.Inicio;
+import com.automacao.pages.ResultadoProdutoPage;
+import com.automacao.support.ConfiguracaoPadrao;
 
 public class AcoesComumTest {
 	
 	public WebDriver navegador;
-	AcoesComumPage basePage;
+	AcoesComumPage acoesComumPage;
 	InicialPage inicialPage;
+	ResultadoProdutoPage resultadoProdutoPage;
 	
 	@Rule
-	public TestName NomeTeste = new TestName();
+	public TestName nomeMetodoTest = new TestName();
 	
 	@Before
 	public void iniciarTeste() {
-		navegador = Inicio.criarMultiplusNavegadores();
+		navegador = ConfiguracaoPadrao.criarMultiplusNavegadores();
+		//navegador = ConfiguracaoPadrao.abrirChrome();
+		inicialPage = new InicialPage(navegador);
 	}
 	
 	@After
 	public void finalizarTeste() {
-		Inicio.FinalizarNavegadores();
+		AcoesComumPage.armazenarEvidencia(navegador, nomeMetodoTest.getMethodName());
+		ConfiguracaoPadrao.FinalizarNavegadores();
 	}
 
 }
